@@ -329,7 +329,7 @@ byte sttn(byte &s) {
 }
 
 // Сырые секунды в человеческие (часы type=0) (минуты type=1) (секунды type=2)
-byte secondsToTimer(byte number, byte type) {
+byte secondsToTimer(uint32_t number, byte type) {
 	if (type == 0) {
 		return number / 60 / 60;
 	} else if (type == 1) {
